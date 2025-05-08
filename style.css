@@ -1,65 +1,42 @@
-/* Reset básico para padronizar os estilos entre navegadores */
-* {
+ /* Reset básico*/
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* Variáveis CSS para reutilização de cores e tamanhos */
-  :root {
-    --primary: #0057ff;
-    --radius: 6px;
-  }
-  
-  /* Estilos globais para todo o corpo da página */
+
   body {
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Container principal com largura máxima e centralizado */
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 24px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  /* Cabeçalho com fundo azul e texto branco */
-  .header {
-    background-color: var(--primary);
-    color: #fff;
+    background-color: #fff;
     padding: 20px;
+  }
+
+  h1 {
     text-align: center;
+    margin-bottom: 30px;
   }
-  
-  /* Estilo do título principal */
-  .title {
-    margin: 0;
+
+  /* Container flexível que se adapta ao tamanho da tela */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  /* Cartão que envolve conteúdo */
+
+  /* Estilo dos cards */
   .card {
-    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    padding: 20px;
   }
-  
-  /* Estilização do botão com cor e borda arredondada */
-  .button {
-    background: var(--primary);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: var(--radius);
-    cursor: pointer;
+
+  .card h2 {
+    color: #0077cc;
+    margin-bottom: 15px;
   }
-  
-  /* Responsividade para telas pequenas */
-  @media (max-width: 600px) {
-    .container {
-      padding: 12px;
-    }
+
+  .card p {
+    color: #555;
+    line-height: 1.6;
   }
